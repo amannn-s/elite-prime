@@ -201,9 +201,9 @@ function HeroSection() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="overflow-hidden shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
                 <div
-                  className="h-64 bg-cover bg-center relative"
+                  className="h-60 bg-cover bg-center relative"
                   style={{
                     backgroundImage: `url('https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600')`,
                   }}
@@ -221,15 +221,15 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="p-6">
+                <CardContent className="py-2 px-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Premium Corporate Tower
                   </h3>
-                  <p className="text-neutral-700 mb-4">
+                  <p className="text-neutral-700 mb-2">
                     Downtown Financial District
                   </p>
 
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="flex justify-between border-t items-center mb-4 mt-2">
                     <div>
                       <div className="text-neutral-700">Current Bid</div>
                       <div className="text-2xl font-bold text-neutral-500">
@@ -242,9 +242,9 @@ function HeroSection() {
                     </div>
                   </div>
 
-                  <Card className="bg-neutral-100 mb-4">
-                    <CardContent className="p-4 text-center">
-                      <div className="text-neutral-700 mb-1">
+                  <Card className="bg-neutral-100 rounded-none border-0 border-t shadow-none">
+                    <CardContent className="p-2 text-center">
+                      <div className="text-red-600 font-medium mb-1">
                         Auction Ends In
                       </div>
                       <div className="text-2xl font-bold text-black font-mono">
@@ -253,16 +253,16 @@ function HeroSection() {
                     </CardContent>
                   </Card>
 
-                  <Button className="w-full">
+                  <Button className="w-full rounded-none">
                     <Gavel className="w-4 h-4 mr-2" />
                     Join Auction
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
                 <div
-                  className="h-64 bg-cover bg-center relative"
+                  className="h-60 bg-cover bg-center relative"
                   style={{
                     backgroundImage: `url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600')`,
                   }}
@@ -280,13 +280,13 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="p-6">
+                <CardContent className="py-2 px-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Metropolitan Medical Center
                   </h3>
-                  <p className="text-neutral-700  mb-4">Healthcare District</p>
+                  <p className="text-neutral-700 mb-2">Healthcare District</p>
 
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="flex justify-between border-t items-center mb-4 mt-2">
                     <div>
                       <div className="text-neutral-700 ">Current Bid</div>
                       <div className="text-2xl font-bold text-neutral-500">
@@ -299,9 +299,9 @@ function HeroSection() {
                     </div>
                   </div>
 
-                  <Card className="bg-neutral-100  mb-4">
-                    <CardContent className="p-4 text-center">
-                      <div className="text-neutral-700 mb-1">
+                  <Card className="bg-neutral-100 rounded-none border-0 border-t shadow-none">
+                    <CardContent className="p-2 text-center">
+                      <div className="text-red-600 font-medium mb-1">
                         Auction Ends In
                       </div>
                       <div className="text-2xl font-bold text-black font-mono">
@@ -310,16 +310,16 @@ function HeroSection() {
                     </CardContent>
                   </Card>
 
-                  <Button className="w-full">
+                  <Button className="w-full rounded-none">
                     <Gavel className="w-4 h-4 mr-2" />
                     Join Auction
                   </Button>
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden shadow-md transition-all duration-300 transform hover:-translate-y-1">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
                 <div
-                  className="h-64 bg-cover bg-center relative"
+                  className="h-60 bg-cover bg-center relative"
                   style={{
                     backgroundImage: `url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600')`,
                   }}
@@ -336,13 +336,13 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="p-6">
+                <CardContent className="py-2 px-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Elite Academic Campus
                   </h3>
-                  <p className="text-neutral-700 mb-4">University District</p>
+                  <p className="text-neutral-700 mb-2">University District</p>
 
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="flex justify-between border-t items-center mb-4 mt-2">
                     <div>
                       <div className="text-neutral-700 ">Starting Price</div>
                       <div className="text-2xl font-bold text-neutral-500">
@@ -355,18 +355,18 @@ function HeroSection() {
                     </div>
                   </div>
 
-                  <Card className="bg-neutral-100 mb-4">
-                    <CardContent className="p-4 text-center">
-                      <div className="text-neutral-700 mb-1">
+                  <Card className="bg-neutral-100 rounded-none border-0 border-t shadow-none">
+                    <CardContent className="p-2 text-center">
+                      <div className="text-orange-600 font-medium mb-1">
                         Auction Starts In
                       </div>
-                      <div className="text-2xl font-bold text-orange-600 font-mono">
+                      <div className="text-2xl font-bold text-black font-mono">
                         26 Days 14:30:25
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Button variant="outline" className="w-full">
+                  <Button variant="destructive" className="w-full rounded-none">
                     <Clock className="w-4 h-4 mr-2" />
                     Set Reminder
                   </Button>
