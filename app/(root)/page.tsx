@@ -11,7 +11,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Award, Clock, Gavel, Search, Shield } from "lucide-react";
-import React, { useEffect } from "react";
+import React from "react";
 
 const HomePage = () => {
   return (
@@ -24,60 +24,9 @@ const HomePage = () => {
 export default HomePage;
 
 function HeroSection() {
-  useEffect(() => {
-    (async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const locomotiveScroll = new LocomotiveScroll();
-    })();
-  }, []);
-
   return (
     <section>
       <div className="min-h-screen">
-        {/* Header */}
-        <header className="sticky top-0 z-50 bg-white/40 backdrop-blur-xl">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <h1 className="text-2xl font-display font-bold text-primary">
-                  ElitePrime
-                </h1>
-              </div>
-              <nav className="hidden md:flex items-center space-x-8">
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
-                >
-                  Properties
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
-                >
-                  Auctions
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
-                >
-                  How It Works
-                </a>
-                <a
-                  href="#"
-                  className="text-primary hover:text-primary/80 transition-colors duration-200 font-medium"
-                >
-                  About
-                </a>
-              </nav>
-              <div className="flex items-center space-x-4">
-                <Button variant="outline">Sign In</Button>
-                <Button>Get Started</Button>
-              </div>
-            </div>
-          </div>
-        </header>
-
         {/* Hero Section */}
         <section className="relative luxury-gradient text-white">
           <div className="absolute inset-0 bg-black/90"></div>
@@ -151,13 +100,13 @@ function HeroSection() {
 
         {/* Stats Section */}
         <section className="-translate-y-1/2 px-4">
-          <div className="shadow-md border-2 border-neutral-300 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/40 backdrop-blur-lg rounded-2xl py-6">
+          <div className="shadow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white via-purple-50 to-white rounded-xl py-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-display font-bold text-primary mb-2">
                   $2.4B+
                 </div>
-                <div className="text-neutral-700 font-medium">
+                <div className="text-neutral-700 font-medium text-sm">
                   Total Value Transacted
                 </div>
               </div>
@@ -165,7 +114,7 @@ function HeroSection() {
                 <div className="text-4xl font-display font-bold text-primary mb-2">
                   850+
                 </div>
-                <div className="text-neutral-700 font-medium">
+                <div className="text-neutral-700 font-medium text-sm">
                   Properties Sold
                 </div>
               </div>
@@ -173,13 +122,15 @@ function HeroSection() {
                 <div className="text-4xl font-display font-bold text-primary mb-2">
                   95%
                 </div>
-                <div className="text-neutral-700 font-medium">Success Rate</div>
+                <div className="text-neutral-700 font-medium text-sm">
+                  Success Rate
+                </div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-display font-bold text-primary mb-2">
                   24/7
                 </div>
-                <div className="text-neutral-700 font-medium">
+                <div className="text-neutral-700 font-medium text-sm">
                   Expert Support
                 </div>
               </div>
@@ -201,7 +152,7 @@ function HeroSection() {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded">
                 <div
                   className="h-60 bg-cover bg-center relative"
                   style={{
@@ -221,7 +172,7 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="py-2 px-0">
+                <CardContent className="p-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Premium Corporate Tower
                   </h3>
@@ -260,7 +211,7 @@ function HeroSection() {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded">
                 <div
                   className="h-60 bg-cover bg-center relative"
                   style={{
@@ -280,7 +231,7 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="py-2 px-0">
+                <CardContent className="p-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Metropolitan Medical Center
                   </h3>
@@ -317,7 +268,7 @@ function HeroSection() {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded-none">
+              <Card className="overflow-hidden border-0 shadow-none transition-all duration-300 transform hover:-translate-y-1 rounded">
                 <div
                   className="h-60 bg-cover bg-center relative"
                   style={{
@@ -336,7 +287,7 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <CardContent className="py-2 px-0">
+                <CardContent className="p-0">
                   <h3 className="text-xl font-display font-semibold text-primary mb-0">
                     Elite Academic Campus
                   </h3>
@@ -389,9 +340,9 @@ function HeroSection() {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="text-center p-8 shadow-md">
-                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Shield className="w-8 h-8 text-purple-50" />
+              <Card className="text-center p-8 rounded-xl shadow-none">
+                <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="w-8 h-8 text-purple-500" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-primary mb-4">
                   Verification
@@ -402,9 +353,9 @@ function HeroSection() {
                 </p>
               </Card>
 
-              <Card className="text-center p-8 shadow-md">
-                <div className="w-16 h-16 bg-primary/10 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Gavel className="w-8 h-8 text-yellow-50" />
+              <Card className="text-center p-8 rounded-xl shadow-none">
+                <div className="w-16 h-16 bg-primary/10 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Gavel className="w-8 h-8 text-yellow-500" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-primary mb-4">
                   Participate
@@ -415,9 +366,9 @@ function HeroSection() {
                 </p>
               </Card>
 
-              <Card className="text-center p-8 shadow-md">
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-green-50" />
+              <Card className="text-center p-8 rounded-xl shadow-none">
+                <div className="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="w-8 h-8 text-green-500" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-primary mb-4">
                   Acquire
